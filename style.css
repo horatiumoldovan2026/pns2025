@@ -451,3 +451,9 @@ footer {
     min-height: 500px;
   }
 }
+.brand-logo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  border-radius: 14px;
+}
