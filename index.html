@@ -3,11 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Program Național de Radioterapie 2025 | Dashboard Power BI</title>
-  <meta name="description" content="Dashboard interactiv Power BI pentru analiza Programului Național de Radioterapie 2025." />
+  <title>PNS 2025 – Dashboard Power BI Radioterapie</title>
+  <meta name="description" content="Dashboard interactiv Power BI pentru Programul Național de Radioterapie 2025." />
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
   <header class="hero">
     <nav class="nav">
@@ -30,8 +29,8 @@
         <p class="eyebrow">Analiză executivă</p>
         <h1>Radioterapie 2025: cheltuieli, furnizori, județe și tipuri de servicii</h1>
         <p class="lead">
-          Platformă de vizualizare pentru monitorizarea Programului Național de Radioterapie,
-          cu filtre interactive pe județ, furnizor, categorie, tip de radioterapie și subcategorie pacient.
+          Platformă interactivă pentru monitorizarea Programului Național de Radioterapie,
+          cu filtre pe județ, furnizor, categorie, tip radioterapie și subcategorie pacient.
         </p>
         <div class="hero-actions">
           <a class="button primary" href="#dashboard">Deschide dashboardul</a>
@@ -40,12 +39,12 @@
       </div>
 
       <div class="summary-card">
-        <h2>Ce urmărește dashboardul</h2>
+        <h2>Analize disponibile</h2>
         <ul>
-          <li>Distribuția cheltuielilor pe județe</li>
+          <li>Harta României pe județe</li>
           <li>Top furnizori după cheltuieli</li>
-          <li>Cost mediu pe bolnav și pe serviciu</li>
-          <li>Ponderea fiecărui județ/furnizor în total</li>
+          <li>Cost mediu pe bolnav și serviciu</li>
+          <li>Pondere cheltuieli în total program</li>
           <li>Analiza tipurilor de radioterapie</li>
         </ul>
       </div>
@@ -56,30 +55,14 @@
     <section id="indicatori" class="section">
       <div class="section-heading">
         <p class="eyebrow">Indicatori principali</p>
-        <h2>Structură recomandată pentru analiza executivă</h2>
+        <h2>Dashboard executiv pentru programul de radioterapie</h2>
       </div>
 
       <div class="kpi-grid">
-        <article class="kpi">
-          <span>01</span>
-          <h3>Total cheltuieli</h3>
-          <p>Valoarea totală a serviciilor raportate în program.</p>
-        </article>
-        <article class="kpi">
-          <span>02</span>
-          <h3>Total bolnavi</h3>
-          <p>Numărul de pacienți tratați, agregat pe filtrele selectate.</p>
-        </article>
-        <article class="kpi">
-          <span>03</span>
-          <h3>Cost mediu/bolnav</h3>
-          <p>Raportul dintre cheltuieli și numărul de bolnavi.</p>
-        </article>
-        <article class="kpi">
-          <span>04</span>
-          <h3>Pondere cheltuieli</h3>
-          <p>Contribuția județului/furnizorului în totalul programului.</p>
-        </article>
+        <article class="kpi"><span>01</span><h3>Total cheltuieli</h3><p>Valoarea serviciilor raportate în program.</p></article>
+        <article class="kpi"><span>02</span><h3>Total bolnavi</h3><p>Numărul de pacienți tratați.</p></article>
+        <article class="kpi"><span>03</span><h3>Cost mediu/bolnav</h3><p>Cheltuieli raportate la numărul de bolnavi.</p></article>
+        <article class="kpi"><span>04</span><h3>Pondere cheltuieli</h3><p>Contribuția județului sau furnizorului în total.</p></article>
       </div>
     </section>
 
@@ -87,24 +70,16 @@
       <div class="section-heading">
         <p class="eyebrow">Power BI</p>
         <h2>Dashboard interactiv</h2>
-        <p>
-          După publicarea raportului în Power BI Service, înlocuiește linkul din iframe cu linkul tău de embed.
-        </p>
       </div>
 
       <div class="embed-shell">
         <iframe
           title="Dashboard Power BI Radioterapie 2025"
-          src="https://app.powerbi.com/view?r=INLOCUIESTE_CU_LINKUL_TAU_POWER_BI"
+          src="https://app.powerbi.com/view?r=eyJrIjoiYjdiMzIwMjUtNTE1YS00MjlhLWEwYTMtNTQwYTM5ZGU0YjM5IiwidCI6ImJhMzlkMTdlLTNhMWMtNDNjOC1hZGFmLTExNjQ3YTBlZGU2MSIsImMiOjl9"
           frameborder="0"
           allowfullscreen="true">
         </iframe>
       </div>
-
-      <p class="note">
-        Notă: dacă raportul este confidențial, nu folosi „Publish to web public”. Pentru date interne,
-        folosește Power BI Service cu autentificare Microsoft.
-      </p>
     </section>
 
     <section id="metodologie" class="section methodology">
@@ -114,34 +89,16 @@
       </div>
 
       <div class="method-grid">
-        <div>
-          <h3>Model de date</h3>
-          <p>
-            Datele au fost normalizate în format lung pentru a permite filtrarea după județ,
-            furnizor, categorie radioterapie, tip radioterapie și subcategorie pacient.
-          </p>
-        </div>
-        <div>
-          <h3>Calcul indicatori</h3>
-          <p>
-            Costurile medii sunt calculate prin împărțirea cheltuielilor la numărul de bolnavi
-            sau servicii. Ponderea cheltuielilor exprimă raportul față de totalul programului.
-          </p>
-        </div>
-        <div>
-          <h3>Hartă județe</h3>
-          <p>
-            Harta folosește o mapare între denumirile CAS și denumirile județelor din fișierul
-            TopoJSON utilizat în Power BI Shape Map.
-          </p>
-        </div>
+        <div><h3>Model de date</h3><p>Datele au fost normalizate pentru filtrare după județ, furnizor și tip radioterapie.</p></div>
+        <div><h3>Indicatori</h3><p>Costurile medii sunt calculate prin împărțirea cheltuielilor la bolnavi sau servicii.</p></div>
+        <div><h3>Hartă</h3><p>Harta folosește maparea județelor pentru Shape Map în Power BI.</p></div>
       </div>
     </section>
   </main>
 
   <footer>
     <p>Dashboard Power BI – Program Național de Radioterapie 2025</p>
-    <p>Site static publicat prin GitHub Pages.</p>
+    <p>Publicat prin GitHub Pages</p>
   </footer>
 </body>
 </html>
