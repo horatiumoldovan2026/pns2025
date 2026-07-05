@@ -169,8 +169,8 @@ nav a:hover {
 }
 
 iframe {
-  width: 100%;
-  height: min(88vh, 940px);
+  width: 100% !important;
+  height: min(88vh, 940px) !important;
   min-height: 720px;
   border: none;
   border-radius: 14px;
@@ -218,7 +218,7 @@ footer {
   }
 
   iframe {
-    height: 74vh;
+    height: 74vh !important;
     min-height: 640px;
   }
 }
@@ -255,7 +255,7 @@ footer {
   }
 
   iframe {
-    height: 76vh;
+    height: 76vh !important;
     min-height: 560px;
     border-radius: 10px;
   }
