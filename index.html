@@ -1,25 +1,126 @@
-<!DOCTYPE html><html lang='ro'><head>
-<meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'>
-<title>PNS 2025 - Dashboard Radioterapie</title>
-<link rel='stylesheet' href='style.css'>
-</head><body>
-<header><h1>Programul Național de Radioterapie 2025</h1>
-<p>Dashboard interactiv Power BI</p></header>
-<nav>
-<a href="#dash">Dashboard</a>
-<a href="#info">Metodologie</a>
-</nav>
-<section id="dash">
-<h2>Dashboard interactiv</h2>
-<div class="frame">
-<iframe title="dashboard_radioterapie_cas_mures_2025"
-src="https://app.powerbi.com/view?r=eyJrIjoiYjdiMzIwMjUtNTE1YS00MjlhLWEwYTMtNTQwYTM5ZGU0YjM5IiwidCI6ImJhMzlkMTdlLTNhMWMtNDNjOC1hZGFmLTExNjQ3YTBlZGU2MSIsImMiOjl9"
-allowfullscreen frameborder="0"></iframe>
-</div>
-</section>
-<section id="info">
-<h2>Despre dashboard</h2>
-<p>Acest dashboard permite analiza cheltuielilor, furnizorilor, județelor, costurilor medii, tipurilor de radioterapie și a indicatorilor Programului Național de Radioterapie.</p>
-</section>
-<footer>© 2025 PNS Radioterapie</footer>
-</body></html>
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PNS Radioterapie 2025 | Dashboard Power BI</title>
+  <meta name="description" content="Portal interactiv pentru Programul Național de Radioterapie 2025." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="page-bg"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#">
+      <span class="brand-mark">CNAS</span>
+      <span>
+        <strong>PNS Radioterapie 2025</strong>
+        <small>Dashboard Power BI</small>
+      </span>
+    </a>
+
+    <nav class="nav">
+      <a href="#overview">Prezentare</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#indicatori">Indicatori</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="overview" class="hero reveal">
+      <div class="hero-copy">
+        <p class="eyebrow">Program Național de Radioterapie</p>
+        <h1>Analiză interactivă a cheltuielilor, furnizorilor și județelor</h1>
+        <p class="lead">
+          Portal responsive pentru vizualizarea dashboardului Power BI, optimizat pentru desktop,
+          tabletă și telefon.
+        </p>
+        <div class="actions">
+          <a class="btn primary" href="#dashboard">Vezi dashboardul</a>
+          <a class="btn ghost" href="#indicatori">Indicatori urmăriți</a>
+        </div>
+      </div>
+
+      <div class="hero-panel">
+        <div class="pulse-card">
+          <span class="pulse-dot"></span>
+          <strong>Dashboard live</strong>
+          <p>Filtre interactive pe județ, furnizor, tip radioterapie și costuri.</p>
+        </div>
+        <div class="mini-grid">
+          <div><span>Harta</span><strong>Județe</strong></div>
+          <div><span>Top</span><strong>Furnizori</strong></div>
+          <div><span>KPI</span><strong>Cost mediu</strong></div>
+          <div><span>BI</span><strong>Power BI</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="dashboard" class="dashboard reveal">
+      <div class="section-title">
+        <p class="eyebrow">Vizualizare interactivă</p>
+        <h2>Dashboard Power BI integrat</h2>
+      </div>
+
+      <div class="dashboard-shell">
+        <div class="dashboard-toolbar">
+          <span></span><span></span><span></span>
+          <p>Program Național de Radioterapie 2025</p>
+        </div>
+        <iframe
+          title="dashboard_radioterapie_cas_mures_2025"
+          src="https://app.powerbi.com/view?r=eyJrIjoiYjdiMzIwMjUtNTE1YS00MjlhLWEwYTMtNTQwYTM5ZGU0YjM5IiwidCI6ImJhMzlkMTdlLTNhMWMtNDNjOC1hZGFmLTExNjQ3YTBlZGU2MSIsImMiOjl9"
+          frameborder="0"
+          allowfullscreen="true">
+        </iframe>
+      </div>
+    </section>
+
+    <section id="indicatori" class="cards reveal">
+      <div class="section-title">
+        <p class="eyebrow">Indicatori</p>
+        <h2>Ce evidențiază raportul</h2>
+      </div>
+
+      <div class="card-grid">
+        <article>
+          <span class="icon">01</span>
+          <h3>Cheltuieli totale</h3>
+          <p>Analiză agregată la nivel de județ, furnizor și tip de radioterapie.</p>
+        </article>
+        <article>
+          <span class="icon">02</span>
+          <h3>Cost mediu/bolnav</h3>
+          <p>Comparație rapidă între furnizori și zone geografice.</p>
+        </article>
+        <article>
+          <span class="icon">03</span>
+          <h3>Harta României</h3>
+          <p>Județe colorate în funcție de nivelul cheltuielilor.</p>
+        </article>
+        <article>
+          <span class="icon">04</span>
+          <h3>Top furnizori</h3>
+          <p>Clasamente și filtre interactive pentru analiză executivă.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>PNS Radioterapie 2025</strong>
+    <span>Site publicat prin GitHub Pages · Dashboard Power BI</span>
+  </footer>
+
+  <script>
+    const items = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.12 });
+    items.forEach(item => observer.observe(item));
+  </script>
+</body>
+</html>
