@@ -1,125 +1,156 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ro">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>PNS Radioterapie 2025 | Dashboard Power BI</title>
-  <meta name="description" content="Portal interactiv pentru Programul Național de Radioterapie 2025." />
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PNS Radioterapie 2025</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-  <div class="page-bg"></div>
 
-  <header class="site-header">
-<a class="brand" href="#">
-  <img src="logo.jpg" alt="CNAS" class="brand-logo">
-  <span>
-    <strong>PNS Radioterapie 2025</strong>
-    <small>Dashboard Power BI</small>
-  </span>
+<header>
+
+<div class="logo">
+
+<img src="logo.png" alt="CNAS">
+
+<div>
+
+<h2>PNS Radioterapie 2025</h2>
+
+<p>Dashboard Power BI</p>
+
+</div>
+
+</div>
+
+<nav>
+
+<a href="#prezentare">Prezentare</a>
+
+<a href="#dashboard">Dashboard</a>
+
+<a href="#indicatori">Indicatori</a>
+
+</nav>
+
+</header>
+
+<section class="hero" id="prezentare">
+
+<div class="hero-text">
+
+<h1>Programul Național de Radioterapie</h1>
+
+<p>
+
+Platformă interactivă pentru analiza serviciilor de radioterapie finanțate prin FNUASS.
+
+Dashboard-ul permite analiza cheltuielilor, furnizorilor, județelor și indicatorilor de performanță.
+
+</p>
+
+<a href="#dashboard" class="button">
+
+Deschide Dashboard
+
 </a>
-    <nav class="nav">
-      <a href="#overview">Prezentare</a>
-      <a href="#dashboard">Dashboard</a>
-      <a href="#indicatori">Indicatori</a>
-    </nav>
-  </header>
 
-  <main>
-    <section id="overview" class="hero reveal">
-      <div class="hero-copy">
-        <p class="eyebrow">Program Național de Radioterapie</p>
-        <h1>Analiză interactivă a cheltuielilor, furnizorilor și județelor</h1>
-        <p class="lead">
-          Portal responsive pentru vizualizarea dashboardului Power BI, optimizat pentru desktop,
-          tabletă și telefon.
-        </p>
-        <div class="actions">
-          <a class="btn primary" href="#dashboard">Vezi dashboardul</a>
-          <a class="btn ghost" href="#indicatori">Indicatori urmăriți</a>
-        </div>
-      </div>
+</div>
 
-      <div class="hero-panel">
-        <div class="pulse-card">
-          <span class="pulse-dot"></span>
-          <strong>Dashboard live</strong>
-          <p>Filtre interactive pe județ, furnizor, tip radioterapie și costuri.</p>
-        </div>
-        <div class="mini-grid">
-          <div><span>Harta</span><strong>Județe</strong></div>
-          <div><span>Top</span><strong>Furnizori</strong></div>
-          <div><span>KPI</span><strong>Cost mediu</strong></div>
-          <div><span>BI</span><strong>Power BI</strong></div>
-        </div>
-      </div>
-    </section>
+</section>
 
-    <section id="dashboard" class="dashboard reveal">
-      <div class="section-title">
-        <p class="eyebrow">Vizualizare interactivă</p>
-        <h2>Dashboard Power BI integrat</h2>
-      </div>
+<section class="cards" id="indicatori">
 
-      <div class="dashboard-shell">
-        <div class="dashboard-toolbar">
-          <span></span><span></span><span></span>
-          <p>Program Național de Radioterapie 2025</p>
-        </div>
-        <iframe
-          title="dashboard_radioterapie_cas_mures_2025"
-          src="https://app.powerbi.com/view?r=eyJrIjoiYjdiMzIwMjUtNTE1YS00MjlhLWEwYTMtNTQwYTM5ZGU0YjM5IiwidCI6ImJhMzlkMTdlLTNhMWMtNDNjOC1hZGFmLTExNjQ3YTBlZGU2MSIsImMiOjl9"
-          frameborder="0"
-          allowfullscreen="true">
-        </iframe>
-      </div>
-    </section>
+<div class="card">
 
-    <section id="indicatori" class="cards reveal">
-      <div class="section-title">
-        <p class="eyebrow">Indicatori</p>
-        <h2>Ce evidențiază raportul</h2>
-      </div>
+<h3>Cheltuieli</h3>
 
-      <div class="card-grid">
-        <article>
-          <span class="icon">01</span>
-          <h3>Cheltuieli totale</h3>
-          <p>Analiză agregată la nivel de județ, furnizor și tip de radioterapie.</p>
-        </article>
-        <article>
-          <span class="icon">02</span>
-          <h3>Cost mediu/bolnav</h3>
-          <p>Comparație rapidă între furnizori și zone geografice.</p>
-        </article>
-        <article>
-          <span class="icon">03</span>
-          <h3>Harta României</h3>
-          <p>Județe colorate în funcție de nivelul cheltuielilor.</p>
-        </article>
-        <article>
-          <span class="icon">04</span>
-          <h3>Top furnizori</h3>
-          <p>Clasamente și filtre interactive pentru analiză executivă.</p>
-        </article>
-      </div>
-    </section>
-  </main>
+<p>Analiza cheltuielilor totale și a ponderii pe județe.</p>
 
-  <footer>
-    <strong>PNS Radioterapie 2025</strong>
-    <span>Site publicat prin GitHub Pages · Dashboard Power BI</span>
-  </footer>
+</div>
 
-  <script>
-    const items = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
-      });
-    }, { threshold: 0.12 });
-    items.forEach(item => observer.observe(item));
-  </script>
+<div class="card">
+
+<h3>Furnizori</h3>
+
+<p>Clasamente și comparații între furnizori.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Costuri</h3>
+
+<p>Cost mediu pe bolnav și cost mediu pe serviciu.</p>
+
+</div>
+
+<div class="card">
+
+<h3>Harta României</h3>
+
+<p>Distribuția teritorială a finanțării.</p>
+
+</div>
+
+</section>
+
+<section id="dashboard">
+
+<h2>
+
+Dashboard interactiv
+
+</h2>
+
+<div class="iframe-container">
+
+<iframe
+
+title="dashboard_radioterapie_cas_mures_2025"
+
+src="https://app.powerbi.com/view?r=eyJrIjoiYjdiMzIwMjUtNTE1YS00MjlhLWEwYTMtNTQwYTM5ZGU0YjM5IiwidCI6ImJhMzlkMTdlLTNhMWMtNDNjOC1hZGFmLTExNjQ3YTBlZGU2MSIsImMiOjl9"
+
+allowfullscreen>
+
+</iframe>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2025 Casa Națională de Asigurări de Sănătate
+
+</footer>
+
+<script>
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+});
+
+document.querySelectorAll(".card,.hero").forEach(el=>observer.observe(el));
+
+</script>
+
 </body>
+
 </html>
