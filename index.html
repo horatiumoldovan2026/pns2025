@@ -3,57 +3,145 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dashboard Radioterapie 2025</title>
+  <title>Program Național de Radioterapie 2025 | Dashboard Power BI</title>
+  <meta name="description" content="Dashboard interactiv Power BI pentru analiza Programului Național de Radioterapie 2025." />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <header class="hero">
-    <div class="hero-inner">
-      <div class="badge">CNAS • Program Radioterapie 2025</div>
-      <h1>Dashboard interactiv – Programul de Radioterapie</h1>
-      <p>Analiză pe județe, furnizori, cost mediu pe bolnav, tipuri de radioterapie și pondere în total cheltuieli.</p>
-      <div class="kpis">
-        <span>Hartă România</span>
-        <span>Analiză furnizori</span>
-        <span>KPI costuri</span>
-        <span>Filtre interactive</span>
+    <nav class="nav">
+      <div class="brand">
+        <div class="logo">CNAS</div>
+        <div>
+          <strong>Program Național de Radioterapie</strong>
+          <span>Dashboard interactiv 2025</span>
+        </div>
       </div>
-    </div>
+      <div class="nav-links">
+        <a href="#dashboard">Dashboard</a>
+        <a href="#indicatori">Indicatori</a>
+        <a href="#metodologie">Metodologie</a>
+      </div>
+    </nav>
+
+    <section class="hero-content">
+      <div>
+        <p class="eyebrow">Analiză executivă</p>
+        <h1>Radioterapie 2025: cheltuieli, furnizori, județe și tipuri de servicii</h1>
+        <p class="lead">
+          Platformă de vizualizare pentru monitorizarea Programului Național de Radioterapie,
+          cu filtre interactive pe județ, furnizor, categorie, tip de radioterapie și subcategorie pacient.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#dashboard">Deschide dashboardul</a>
+          <a class="button secondary" href="#metodologie">Vezi metodologia</a>
+        </div>
+      </div>
+
+      <div class="summary-card">
+        <h2>Ce urmărește dashboardul</h2>
+        <ul>
+          <li>Distribuția cheltuielilor pe județe</li>
+          <li>Top furnizori după cheltuieli</li>
+          <li>Cost mediu pe bolnav și pe serviciu</li>
+          <li>Ponderea fiecărui județ/furnizor în total</li>
+          <li>Analiza tipurilor de radioterapie</li>
+        </ul>
+      </div>
+    </section>
   </header>
 
   <main>
-    <section class="card">
-      <h2>Dashboard Power BI</h2>
-      <p class="hint">Înlocuiește mai jos linkul iframe cu linkul obținut din Power BI Service: File → Embed report → Publish to web / Website or portal.</p>
+    <section id="indicatori" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Indicatori principali</p>
+        <h2>Structură recomandată pentru analiza executivă</h2>
+      </div>
 
-      <div class="report-frame">
-        <!-- ÎNLOCUIEȘTE src="..." cu linkul tău Power BI -->
-        <iframe title="Dashboard Radioterapie 2025"
-          src="https://app.powerbi.com/view?r=INLOCUIESTE-CU-LINKUL-TAU"
-          frameborder="0"
-          allowFullScreen="true"></iframe>
+      <div class="kpi-grid">
+        <article class="kpi">
+          <span>01</span>
+          <h3>Total cheltuieli</h3>
+          <p>Valoarea totală a serviciilor raportate în program.</p>
+        </article>
+        <article class="kpi">
+          <span>02</span>
+          <h3>Total bolnavi</h3>
+          <p>Numărul de pacienți tratați, agregat pe filtrele selectate.</p>
+        </article>
+        <article class="kpi">
+          <span>03</span>
+          <h3>Cost mediu/bolnav</h3>
+          <p>Raportul dintre cheltuieli și numărul de bolnavi.</p>
+        </article>
+        <article class="kpi">
+          <span>04</span>
+          <h3>Pondere cheltuieli</h3>
+          <p>Contribuția județului/furnizorului în totalul programului.</p>
+        </article>
       </div>
     </section>
 
-    <section class="grid">
-      <article>
-        <h3>Ce include</h3>
-        <ul>
-          <li>Harta României colorată după cheltuieli</li>
-          <li>Top furnizori după valoare</li>
-          <li>Cost mediu pe bolnav și pe serviciu</li>
-          <li>Filtre pe județ, furnizor și tip radioterapie</li>
-        </ul>
-      </article>
-      <article>
-        <h3>Notă metodologică</h3>
-        <p>Datele au fost normalizate pentru evitarea dublării totalurilor. Rândurile de total și categoriile agregate au fost excluse din calculul indicatorilor operaționali.</p>
-      </article>
+    <section id="dashboard" class="section dashboard-section">
+      <div class="section-heading">
+        <p class="eyebrow">Power BI</p>
+        <h2>Dashboard interactiv</h2>
+        <p>
+          După publicarea raportului în Power BI Service, înlocuiește linkul din iframe cu linkul tău de embed.
+        </p>
+      </div>
+
+      <div class="embed-shell">
+        <iframe
+          title="Dashboard Power BI Radioterapie 2025"
+          src="https://app.powerbi.com/view?r=INLOCUIESTE_CU_LINKUL_TAU_POWER_BI"
+          frameborder="0"
+          allowfullscreen="true">
+        </iframe>
+      </div>
+
+      <p class="note">
+        Notă: dacă raportul este confidențial, nu folosi „Publish to web public”. Pentru date interne,
+        folosește Power BI Service cu autentificare Microsoft.
+      </p>
+    </section>
+
+    <section id="metodologie" class="section methodology">
+      <div class="section-heading">
+        <p class="eyebrow">Metodologie</p>
+        <h2>Note privind interpretarea datelor</h2>
+      </div>
+
+      <div class="method-grid">
+        <div>
+          <h3>Model de date</h3>
+          <p>
+            Datele au fost normalizate în format lung pentru a permite filtrarea după județ,
+            furnizor, categorie radioterapie, tip radioterapie și subcategorie pacient.
+          </p>
+        </div>
+        <div>
+          <h3>Calcul indicatori</h3>
+          <p>
+            Costurile medii sunt calculate prin împărțirea cheltuielilor la numărul de bolnavi
+            sau servicii. Ponderea cheltuielilor exprimă raportul față de totalul programului.
+          </p>
+        </div>
+        <div>
+          <h3>Hartă județe</h3>
+          <p>
+            Harta folosește o mapare între denumirile CAS și denumirile județelor din fișierul
+            TopoJSON utilizat în Power BI Shape Map.
+          </p>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>Dashboard demonstrativ • Actualizare date: 2025</p>
+    <p>Dashboard Power BI – Program Național de Radioterapie 2025</p>
+    <p>Site static publicat prin GitHub Pages.</p>
   </footer>
 </body>
 </html>

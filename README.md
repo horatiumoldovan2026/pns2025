@@ -1,9 +1,15 @@
-# Dashboard Radioterapie 2025
+# PNS 2025 – Dashboard Power BI Radioterapie
 
-Site GitHub Pages pentru dashboard Power BI.
+Site static pentru publicare prin GitHub Pages.
 
 ## Pași
-1. Creează un repository GitHub numit `radioterapie-dashboard`.
-2. Încarcă fișierele `index.html` și `style.css`.
-3. În `index.html`, înlocuiește linkul din `iframe src` cu linkul tău Power BI.
-4. Activează GitHub Pages: Settings > Pages > Deploy from a branch > main > root.
+
+1. Încarcă `index.html`, `style.css`, `README.md` în repository.
+2. Activează GitHub Pages din `Settings > Pages`.
+3. Înlocuiește în `index.html` linkul din iframe:
+   `https://app.powerbi.com/view?r=INLOCUIESTE_CU_LINKUL_TAU_POWER_BI`
+   cu linkul Power BI real.
+
+## Link final estimat
+
+https://horatiumoldovan2026.github.io/pns2025/
