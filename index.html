@@ -1,1 +1,90 @@
-<!doctype html><html lang='ro'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>PNS Radioterapie 2025</title><link rel='stylesheet' href='style.css'></head><body><header><div class='brand'><img src='logo.jpg'><div><h1>PNS Radioterapie 2025</h1><p>Dashboard Power BI</p></div></div><nav><a href='#intro'>Prezentare</a><a href='#dashboard'>Dashboard</a><a href='#indicatori'>Indicatori</a></nav></header><section id='intro' class='hero'><h2>Programul Național de Radioterapie 2025</h2><p>Portal interactiv pentru analiza Programului Național de Radioterapie.</p></section><section id='indicatori' class='cards'><div class='card'><h3>Cheltuieli</h3></div><div class='card'><h3>Cost mediu</h3></div><div class='card'><h3>Harta</h3></div><div class='card'><h3>Furnizori</h3></div></section><section id='dashboard'><h2>Dashboard</h2><iframe title='dashboard_radioterapie_cas_mures_2025' width='1024' height='1060' src='https://app.powerbi.com/view?r=eyJrIjoiYjdiMzIwMjUtNTE1YS00MjlhLWEwYTMtNTQwYTM5ZGU0YjM5IiwidCI6ImJhMzlkMTdlLTNhMWMtNDNjOC1hZGFmLTExNjQ3YTBlZGU2MSIsImMiOjl9&pageName=6bc789cbb133e55ffa87' frameborder='0' allowfullscreen='true'></iframe></section><footer>© CNAS 2025</footer></body></html>
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PNS Radioterapie 2025 | Dashboard Power BI</title>
+  <meta name="description" content="Portal interactiv pentru Programul Național de Radioterapie 2025." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="logo.jpg" alt="CNAS" class="brand-logo" />
+      <div>
+        <h1>PNS Radioterapie 2025</h1>
+        <p>Programul Național de Radioterapie · Dashboard Power BI</p>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="#prezentare">Prezentare</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#indicatori">Indicatori</a>
+    </nav>
+  </header>
+
+  <section id="prezentare" class="hero reveal">
+    <div class="hero-text">
+      <span class="tag">CNAS · Business Intelligence</span>
+      <h2>Analiză interactivă pentru Programul Național de Radioterapie 2025</h2>
+      <p>
+        Portal dedicat monitorizării cheltuielilor, furnizorilor, serviciilor, costurilor medii și distribuției teritoriale.
+      </p>
+      <a href="#dashboard" class="btn">Deschide dashboardul</a>
+    </div>
+  </section>
+
+  <section id="indicatori" class="cards reveal">
+    <article class="card">
+      <span>01</span>
+      <h3>Cheltuieli</h3>
+      <p>Analiza finanțării pe județe, furnizori și tipuri de radioterapie.</p>
+    </article>
+    <article class="card">
+      <span>02</span>
+      <h3>Cost mediu</h3>
+      <p>Cost mediu pe bolnav și cost mediu pe serviciu, cu filtre interactive.</p>
+    </article>
+    <article class="card">
+      <span>03</span>
+      <h3>Harta României</h3>
+      <p>Distribuție teritorială și heatmap pe județe.</p>
+    </article>
+    <article class="card">
+      <span>04</span>
+      <h3>Furnizori</h3>
+      <p>Clasamente, matrix, scatter chart și comparații între unități.</p>
+    </article>
+  </section>
+
+  <section id="dashboard" class="dashboard reveal">
+    <div class="section-title">
+      <h2>Dashboard interactiv</h2>
+      <p>Date vizualizate prin Power BI, cu pagini multiple și filtre interactive.</p>
+    </div>
+
+    <div class="frame">
+      <iframe
+        title="dashboard_radioterapie_cas_mures_2025"
+        width="1024"
+        height="1060"
+        src="https://app.powerbi.com/view?r=eyJrIjoiYjdiMzIwMjUtNTE1YS00MjlhLWEwYTMtNTQwYTM5ZGU0YjM5IiwidCI6ImJhMzlkMTdlLTNhMWMtNDNjOC1hZGFmLTExNjQ3YTBlZGU2MSIsImMiOjl9&pageName=6bc789cbb133e55ffa87"
+        frameborder="0"
+        allowfullscreen="true">
+      </iframe>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <img src="logo.jpg" alt="CNAS" class="footer-logo" />
+      <p>Casa Națională de Asigurări de Sănătate</p>
+    </div>
+    <p>© 2025 · PNS Radioterapie · Dashboard Power BI</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
